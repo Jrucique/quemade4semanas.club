@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 function dateMinus(what) {
     var today = Date.now()
-    var nw = today - what * 10000
+    var nw = today - what * 1
     var newd = new Date()
     newd.setTime(nw)
     var mthName = ['Janeiro', 'Fevereiro', 'MarÃ§o', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
@@ -100,7 +100,7 @@ function postReply(id) {
 }
 setTimeout(function() {
     $('#add-to-cart').show()
-}, 20)
+}, 01)
 var today = new Date()
 today.setDate(today.getFullYear() + 1)
 setCookie('returningVisitor', 'yes', today)
