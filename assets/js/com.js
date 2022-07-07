@@ -1,6 +1,6 @@
 function loadMore() {
     $('#more').show()
-    $('.fb-comments-loadmore').hide().remove()
+    $('.fb-comments-loadmore')
 }
 $(document).ready(function() {
     $('date').each(function() {
