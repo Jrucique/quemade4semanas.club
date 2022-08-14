@@ -83,7 +83,7 @@
 <div id="primeira">
 <div class="question">
 <h1>Pregunta 1</h1>
-<p>¿Quieres realmente descubrir este secreto?</p>
+<p>¿Estás intentando perder peso?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="segunda()">SI</button>
@@ -93,7 +93,7 @@
 <div id="segunda" class="hide">
 <div class="question">
 <h1>Pregunta 2</h1>
-<p>¿Prometes no revelar a nadie?</p>
+<p>¿Te gustaría descubrir el método que usé que transformó mi vida y recuperó mi cuerpo y confianza?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="terceira()">SI</button>
@@ -103,7 +103,17 @@
 <div id="terceira" class="hide">
 <div class="question">
 <h1>Pregunta 3</h1>
-<p>El siguiente video tiene un límite para que lo vean muy pocas personas al mismo tiempo... ¿Tienes intención de verlo hasta el final?</p>
+<p>¿Crees que puedes perder peso sin ejercicios y dietas locas?</p>
+</div>
+<div class="answer">
+<button class="btn" onclick="quarta()">SI</button>
+<button class="btn" onclick="quarta()">NO</button>
+</div>
+</div>
+<div id="quarta" class="hide">
+<div class="question">
+<h1>Pregunta 4</h1>
+<p>El siguiente video tiene la solución que buscas y solo tiene unos minutos, ¿estás dispuesto a verlo hasta el final?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="redirect()">SI</button>
@@ -121,6 +131,10 @@
     function terceira() {
       document.getElementById("segunda").classList.add("hide")
       document.getElementById("terceira").classList.remove("hide")
+    }
+     function quarta() {
+      document.getElementById("terceira").classList.add("hide")
+      document.getElementById("quarta").classList.remove("hide")
     }
     function redirect() {
       location.href = "https://quemade4semanas.club"
